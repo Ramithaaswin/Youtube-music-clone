@@ -1,0 +1,8 @@
+.sidebarMainContainer{
+    border-right: 0.5px solid rgb(70, 64, 64);
+    width: 17vw;
+    height: 90vh;
+    /* overflow-y: scroll; */
+    color: white;
+    padding: 20px; 
+}

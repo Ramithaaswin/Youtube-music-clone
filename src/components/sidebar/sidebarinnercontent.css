@@ -1,0 +1,84 @@
+.sidebarInnercontentMainContainer li{
+    padding: 10px 10px; 
+    display: flex;  
+    border-radius: 5px;
+    /* border: 2px solid red; */
+}
+.sidebarInnercontentMainContainer li:hover{
+    background-color: rgb(40, 38, 38);
+    /* border-radius: 5px; */
+}
+.sidebarInnercontentMainContainer li div:nth-child(2){
+    /* border: 2px solid red; */
+    padding-left: 20px;  
+    width: 170px;
+}
+
+.playlistSidebar{
+    /* border: 2px solid red; */
+    background-color: rgb(34, 33, 33);
+    padding-top: 50px;
+    /* border-radius: 50px; */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlistSidebar:hover{
+    cursor: pointer;
+}
+.homeiconlink{
+    display: flex;
+    text-decoration: none;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    /* height: 50px; */
+    align-items: center;
+    justify-content: center;
+}
+.homeicon{
+    color: white;
+}
+.home{
+    color: white;
+    padding-left: 20px;
+    /* border: 2px solid yellow; */
+}
+.horizontalline{
+    margin-top: 30px;
+}
+.likesandplaylist{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;    
+}
+.autoplaylist-containerdiv{
+    display: flex;
+    /* border: 2px solid red; */
+}
+.autoplaylist{
+    font-size: 13px;
+    padding: none;
+}
+.pushpincon{
+    /* border: 2px solid blue; */
+    height: 13px;
+}
+.likedMusic{
+    color: white;
+    text-decoration: none;
+}
+.likedMusic:hover{
+    cursor: pointer;
+}
+.libraryicon{
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid red; */
+    display: flex;
+}
+.libraryicon:hover{
+    cursor: pointer;
+    display: flex;
+}
+

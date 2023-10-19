@@ -1,0 +1,53 @@
+.musicplayerContainer{
+    /* border: 2px solid red; */
+    color: white;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    
+}
+.MusicControlsmaincontainer{
+    /* border: 2px solid yellow; */
+    width: 25vw;
+    height: 100%;
+}
+.musicInfoMainContainer{
+    /* border: 2px solid yellow; */
+    width: 40vw;
+    height: 100%;
+}
+.MusicControlsmaincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.playicon{
+    /* border: 2px solid  red; */
+}
+.pauseicon{
+
+}
+.musicInfoMainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.musicinfo-thumbnail{
+    height: 50px;
+    width: 50px;
+}
+.close-icon{
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 10;
+}
+.close-icon:hover{
+    background-color: rgb(58, 57, 57);
+}

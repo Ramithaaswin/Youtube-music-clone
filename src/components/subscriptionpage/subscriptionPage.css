@@ -1,0 +1,74 @@
+.SubscriptionMainContainer{
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 90vh;
+    color: white;
+}
+.SubscriptionPageUpperContainer{
+    /* border: 2px solid green; */
+    height: 70%;
+    /* display: flex; */
+    text-align: center;
+    padding: 60px;
+    background-color: rgb(37, 37, 37);
+}
+.SubscriptionPageUpperContainer h1{
+    padding: 30px;
+}
+.SubscriptionPageUpperContainer button{
+    background-color: rgba(13, 161, 241, 0.83);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+}
+.SubscriptionPageUpperContainer p{
+    padding: 30px;
+    font-size: larger;
+}
+.SubscriptionPageLowerContainer{
+    /* border: 2px solid blue; */
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.listenbackground{
+    /* border: 2px solid yellow; */
+    padding-top: 20px;
+    width: 20vw;
+    text-align: center;
+}
+.listenbackground-firstpara{
+    font-size: 30px;
+}
+.listenbackground-secondpara{
+    font-size: 15px;
+    padding-top: 10px;
+}
+.adfreemusic{
+    /* border: 2px solid yellow; */
+    padding-top: 20px;
+    width: 20vw;
+    text-align: center;
+}
+.adfree-firstpara{
+    font-size: 30px;
+}
+.adfree-secondpara{
+    font-size: 15px;
+    padding-top: 10px;
+}
+.downloadandgo{
+    /* border: 2px solid yellow; */
+    padding: 20px;
+    width: 20vw;
+    text-align: center;
+}
+.download-firstpara{
+    font-size: 30px;
+}
+.download-secondpara{
+    font-size: 15px;
+    padding-top: 10px;
+}

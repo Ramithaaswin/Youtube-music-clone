@@ -1,0 +1,62 @@
+.homepageMainContainer{
+    /* border: 2px solid blue; */
+    width: 83vw;
+}
+.topSectionMainContainer{
+    /* border: 2px solid red; */
+    height: 7vh;
+}
+.topSectionListItemMainContainer{
+    /* border: 2px solid green; */
+    height: 100%;
+}
+.topSectionListItemMainContainer ul{
+    /* border: 2px solid blue; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.topSectionListItemMainContainer ul li{
+    margin-left: 2rem;
+    padding: .5rem 1rem;
+    background-color: rgb(60, 59, 59);
+    border-radius: 5px;
+    width: auto;
+}
+.title-recommendedsongs{
+    color: white;
+    padding: 20px 20px 20px;
+}
+.musicsection-maincontainer{
+    display: flex;
+    gap: 20px;
+    /* padding: 20px 20px 20px; */
+    overflow-x: scroll;
+}
+.musiclist{
+    /* border: 2px solid yellow; */
+    color: white;
+    width: 160px;
+    position: relative;
+}
+.musicplayer-link{
+    color: white;
+    text-decoration: none;
+}
+.song-title:hover{
+    text-decoration: underline;
+}
+.song-thumbnail{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
+.thumbsupicon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,64 @@
+.musicplayerdiv{
+    display: flex;
+    color: white;
+}
+.musicplayerMainContainer{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80vh;
+    width: 80vw;
+    align-items: center;
+}
+.musicplayer{
+    /* border: 2px solid blue; */
+    height: 90%;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.musicDetails{
+    /* border: 2px solid green; */
+    height: 85%;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+}
+.musicDetails h1{
+    /* border: 2px solid yellow; */
+    font-size: 40px;
+}
+.artistdetails{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.artistdetails p:nth-child(1){
+    font-size: 25px;
+}
+.musicplayer-imgthumbnail{
+    height: 100%;
+    width: 100%;
+}
+.musicplay-icon{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 100;
+    right: 100;
+    font-size: 50px;
+}
+.musicplay-icon:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}

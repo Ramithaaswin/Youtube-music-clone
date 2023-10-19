@@ -1,0 +1,62 @@
+.librarypage-maincontainer{
+    /* border: 2px solid blue; */
+    height: 90vh;
+    margin: 40px;
+}
+.library-topsection{
+    /* border: 2px solid red; */
+    color: white;
+    height: 7vh;
+}
+.library-topsection ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.library-topsection ul li{
+    margin-left: 2rem;
+    padding: .5rem 1rem;
+    background-color: rgb(60, 59, 59);
+    border-radius: 5px;
+    width: auto;
+}
+.library-bottomsection{
+    /* border: 2px solid green; */
+    height: 73vh;
+    margin: 15px;
+    padding: 20px;
+}
+.librarypage-likeimage{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    /* padding: 20px; */
+}
+.linktolikes{
+    text-decoration: none;
+    color: white;
+}
+.linktolikes:hover{
+    text-decoration: underline;
+}
+.autoplaylist{
+    color: white;
+    font-size: 12px;
+}
+.librarypage-likeimgdescription{
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+}
+.autoplaylist-div{
+    display: flex;
+    gap: 5px;
+}
+.pushpin-icon{
+    color: white;
+    /* height: 5px; */
+}
