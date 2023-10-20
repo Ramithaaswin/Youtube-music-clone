@@ -8,7 +8,8 @@ form{
     height: 50%;
     width: 50%;
     border-radius: 10px;
-    padding: 30px;
+    /* padding: 30px; */
+    padding: 3vh;
     background-color: rgb(22, 21, 21);
 }
 form label{
@@ -19,21 +20,27 @@ form label{
     height: auto;
 }
 form p{
-    padding: 40px;
-    font-size: 20px;
+    /* padding: 40px; */
+    padding: 4vh;
+    /* font-size: 20px; */
+    font-size: 2vh;
 }
 form input{
-    height: 30px;
+    /* height: 30px; */
+    height: 3.5vh;
     background-color: rgb(88, 92, 95);
     border: none;
     border-radius: 5px;
 }
 .form-submit-button{
-    padding: 30px;
+    /* padding: 30px; */
+    padding: 4vh;
 }
 form button{
-    width: 200px;
-    height: 40px;
+    /* width: 200px; */
+    width: 20vh;
+    /* height: 40px; */
+    height: 4vh;
     background-color: rgb(105, 160, 218);
     border: none;
     border-radius: 5px;

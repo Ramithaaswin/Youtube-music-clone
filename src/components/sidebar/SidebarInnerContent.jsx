@@ -54,7 +54,7 @@ const SidebarInnerContent = () => {
             <Link to="/likedmusic" className="likedMusic">
               <div>Your likes</div>
               <div className="autoplaylist-containerdiv">
-                <PushPinIcon className="pushpincon" />
+                <PushPinIcon className="pushpincon" sx={{ fontSize: 17 }}/>
                 <p className="autoplaylist">Auto playlist</p>
               </div>
             </Link>

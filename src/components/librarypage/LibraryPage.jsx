@@ -30,7 +30,7 @@ function LibraryPage() {
               <p className="librarypage-likeimgdescription">Liked Music</p>
             </Link>
             <div className="autoplaylist-div">
-              <PushPin className="pushpin-icon"/>
+              <PushPin className="pushpin-icon" sx={{ fontSize: 17 }}/>
               <p className="autoplaylist">Autoplaylist</p>
             </div>
           </div>

@@ -31,32 +31,32 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
 }
 .musicDetails h1{
     /* border: 2px solid yellow; */
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 5vh;
 }
 .artistdetails{
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 40px; */
+    gap: 1vh;
 }
 .artistdetails p:nth-child(1){
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 3vh;
 }
 .musicplayer-imgthumbnail{
     height: 100%;
     width: 100%;
 }
 .musicplay-icon{
-    height: 50px;
-    width: 50px;
     position: absolute;
     top: 100;
     right: 100;
-    font-size: 50px;
 }
 .musicplay-icon:hover{
     transition: 0.3s;

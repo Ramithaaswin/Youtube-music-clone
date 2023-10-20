@@ -24,13 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-.playicon{
-    /* border: 2px solid  red; */
-}
-.pauseicon{
-
+    /* gap: 20px; */
 }
 .musicInfoMainContainer{
     display: flex;
@@ -39,8 +33,9 @@
     gap: 20px;
 }
 .musicinfo-thumbnail{
-    height: 50px;
-    width: 50px;
+    /* height: 50px;
+    width: 50px; */
+    height: 8vh;
 }
 .close-icon{
     display: flex;

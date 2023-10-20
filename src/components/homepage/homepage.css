@@ -21,26 +21,36 @@
     overflow-y: scroll;
 }
 .topSectionListItemMainContainer ul li{
-    margin-left: 2rem;
-    padding: .5rem 1rem;
+    /* border: 2px solid red; */
+    /* margin-left: 2rem; */
+    margin-left: 2%;
+    /* padding: .5rem 1rem; */
+    padding: .5% 1%;
     background-color: rgb(60, 59, 59);
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-radius: 10%;
     width: auto;
 }
 .title-recommendedsongs{
+    /* border: 2px solid red; */
     color: white;
-    padding: 20px 20px 20px;
+    /* padding: 20px 20px 20px; */
+    padding-bottom: 3%;
+    padding-top: 3%;
 }
 .musicsection-maincontainer{
+    /* border: 2px solid red; */
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
+    gap: 3%;
     /* padding: 20px 20px 20px; */
     overflow-x: scroll;
 }
 .musiclist{
     /* border: 2px solid yellow; */
     color: white;
-    width: 160px;
+    /* width: 160px; */
+    width: 100%;
     position: relative;
 }
 .musicplayer-link{
@@ -51,8 +61,11 @@
     text-decoration: underline;
 }
 .song-thumbnail{
-    height: 150px;
-    width: 150px;
+    /* border: 2px solid yellow; */
+    /* height: 150px; */
+    /* width: 150px; */
+    width: 10vw;
+    height: 10vw;
     border-radius: 5px;
 }
 .thumbsupicon{

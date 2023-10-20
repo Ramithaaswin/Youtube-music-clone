@@ -1,5 +1,4 @@
 .navbarMainContainer{
-    /* border: 2px solid red; */
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -7,32 +6,27 @@
     padding: 0 1rem;
     padding: 10px;
     color: white;
-    /* border-bottom: 0.5px solid rgb(70, 64, 64); */
 }
 .leftSideNavbar{
     width: 10%;
-    /* border-right: 2px solid white; */
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-left: 10px;
-
+    /* padding-left: 10px; */
+    padding-left: .7%;
 }
 .rightSideNavbar{
     width: 8%;
-    /* border: 2px solid red; */
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .LogoMainContainer{
-    /* border: 2px solid green; */
     width: 50%;
 }
 .searchbarMainContainer{
-    /* border: 2px solid red; */
     height: 90%;
     width: 40%;
     display: flex;
@@ -50,11 +44,12 @@
 }
 
 .account-dropdown-container{
-    /* border: 2px solid red;  */
     display: flex;
     position: fixed;
-    top: 80px;
-    right: 60px;
+    /* top: 80px; */
+    top: 10vh;
+    /* right: 60px; */
+    right: 7vh;
     width: 15vw;
     height: 40vh;
     background-color: rgb(34, 33, 33);
@@ -64,20 +59,23 @@
 }
 .account-dropdown-container ul{
     list-style-type: none;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
    
 }
 .account-dropdown-container ul li{
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 1vw;
     display: flex;
     flex-direction: row;
     
 }
 .account-dropdown-container ul li p{
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    padding-left: 1vw;
 }
 .subscription-link{
     text-decoration: none;
@@ -101,7 +99,7 @@
 }
 .blur-div{
     z-index: 5;
-    position: fixed; /* or relative */
+    position: fixed; 
     top: 0%;
     left: 0%;
     min-width: 100vw;

@@ -1,25 +1,26 @@
 .sidebarInnercontentMainContainer li{
-    padding: 10px 10px; 
+    /* padding: 10px 10px;  */
+    padding: 1.5vh 1.5vh;
     display: flex;  
     border-radius: 5px;
-    /* border: 2px solid red; */
 }
 .sidebarInnercontentMainContainer li:hover{
     background-color: rgb(40, 38, 38);
     /* border-radius: 5px; */
 }
 .sidebarInnercontentMainContainer li div:nth-child(2){
-    /* border: 2px solid red; */
-    padding-left: 20px;  
-    width: 170px;
+    /* padding-left: 20px;   */
+    padding-left: 1.5vh;
+    /* width: 170px; */
+    width: 20vh;
 }
 
 .playlistSidebar{
-    /* border: 2px solid red; */
     background-color: rgb(34, 33, 33);
-    padding-top: 50px;
+    /* padding-top: 50px; */
     /* border-radius: 50px; */
-    height: 40px;
+    /* height: 40px; */
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +31,6 @@
 .homeiconlink{
     display: flex;
     text-decoration: none;
-    /* border: 2px solid red; */
     border-radius: 5px;
     /* height: 50px; */
     align-items: center;
@@ -41,28 +41,19 @@
 }
 .home{
     color: white;
-    padding-left: 20px;
-    /* border: 2px solid yellow; */
+    /* padding-left: 20px; */
 }
 .horizontalline{
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin-top: 3vh;
+    margin-bottom: 1vh;
 }
 .likesandplaylist{
-    /* border: 2px solid yellow; */
     display: flex;
     flex-direction: column;    
 }
 .autoplaylist-containerdiv{
     display: flex;
-    /* border: 2px solid red; */
-}
-.autoplaylist{
-    font-size: 13px;
-    padding: none;
-}
-.pushpincon{
-    /* border: 2px solid blue; */
-    height: 13px;
 }
 .likedMusic{
     color: white;
@@ -74,7 +65,6 @@
 .libraryicon{
     color: white;
     text-decoration: none;
-    /* border: 2px solid red; */
     display: flex;
 }
 .libraryicon:hover{
