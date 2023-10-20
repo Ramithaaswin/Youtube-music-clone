@@ -13,7 +13,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding-left: 10px; */
     padding-left: .7%;
 }
 .rightSideNavbar{
@@ -46,35 +45,26 @@
 .account-dropdown-container{
     display: flex;
     position: fixed;
-    /* top: 80px; */
     top: 10vh;
-    /* right: 60px; */
     right: 7vh;
     width: 15vw;
     height: 40vh;
     background-color: rgb(34, 33, 33);
     border-radius: 10px;
-    
-
 }
 .account-dropdown-container ul{
     list-style-type: none;
-    /* padding: 20px; */
     padding: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
 }
 .account-dropdown-container ul li{
-    /* padding: 10px; */
     padding: 1vw;
     display: flex;
     flex-direction: row;
-    
 }
 .account-dropdown-container ul li p{
-    /* padding-left: 10px; */
     padding-left: 1vw;
 }
 .subscription-link{

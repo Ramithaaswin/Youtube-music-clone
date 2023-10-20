@@ -16,26 +16,19 @@
     overflow-y: scroll;
 }
 .library-topsection ul li{
-    /* margin-left: 2rem; */
     margin-left: 2%;
-    /* padding: .5rem 1rem; */
     padding: .7% 2%;
     background-color: rgb(60, 59, 59);
-    /* border-radius: 5px; */
     border-radius: 8%;
     width: auto;
 }
 .library-bottomsection{
     height: 73vh;
-    /* margin: 15px; */
-    /* padding: 20px; */
     padding: 2%;
 }
 .librarypage-likeimage{
-    /* width: 120px; */
     height: 120px;
     border-radius: 5px;
-    /* padding: 20px; */
 }
 .linktolikes{
     text-decoration: none;
@@ -46,22 +39,18 @@
 }
 .autoplaylist{
     color: white;
-    /* font-size: 12px; */
     font-size: 70%;
 }
 .librarypage-likeimgdescription{
     color: white;
     text-decoration: none;
     width: 12%;
-    /* padding-top: 10px; */
     padding-top: .5%;
 }
 .autoplaylist-div{
     display: flex;
     width: 12%;
-    /* gap: 5px; */
 }
 .pushpin-icon{
     color: white;
-    /* height: 5px; */
 }
