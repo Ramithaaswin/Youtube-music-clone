@@ -3,6 +3,8 @@ import "./homepage.css";
 import { Container } from "@mui/material";
 import { Link } from "react-router-dom";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import MusicPlayerBottomWindow from "../musicplayerwidget/MusicPlayerBottomWindow";
 
 const requestOptions = {
   method: "GET",
@@ -13,7 +15,6 @@ const requestOptions = {
 
 function Songs({ setFav, fav }) {
   const [data, setData] = useState([]);
-  // const [isClicked, setIsClicked] = useState(false);
 
   const url = "https://academics.newtonschool.co/api/v1/music/song?limit=100";
 
@@ -34,16 +35,22 @@ function Songs({ setFav, fav }) {
         {data.map((item, index) => {
           return (
             <div className="musiclist" key={index}>
-              <Link
-                to="/musicplayer"
-                className="musicplayer-link"
-                state={{ from: {item} }}
-              >
+              <div className="home-image-container">
                 <img
                   className="song-thumbnail"
                   src={item.thumbnail}
                   alt="thumbnail"
                 />
+                <PlayCircleIcon
+                  className="home-musicplay-icon"
+                  sx={{ fontSize: 30 }}
+                />
+              </div>
+              <Link
+                to="/musicplayer"
+                className="musicplayer-link"
+                state={{ from: { item } }}
+              >
                 <p className="song-title">{item.title}</p>
                 {item.artist.map((ele, idx) => {
                   return (
@@ -55,9 +62,7 @@ function Songs({ setFav, fav }) {
               </Link>
               <ThumbUpIcon
                 className="thumbsupicon"
-                // style={{ color: isClicked ? "blue" : "white" }}
                 onClick={() => {
-                  // setIsClicked(!isClicked);
                   setFav([...fav, item]);
                 }}
               />

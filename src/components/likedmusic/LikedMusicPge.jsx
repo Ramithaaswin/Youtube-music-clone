@@ -43,6 +43,12 @@ function LikedMusicPge({ fav, setFav }) {
                         />
                         <p className="song-title">{item.title}</p>
                         <p>{item.mood}</p>
+                        {/* <ThumbUpIcon
+                          className="thumbsupicon-likedmusicpage"
+                          onClick={() => {
+                            setFav(fav.filter((i) => i !== item));
+                          }}
+                        /> */}
                       </Link>
                       <ThumbUpIcon
                         className="thumbsupicon-likedmusicpage"
