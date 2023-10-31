@@ -15,6 +15,8 @@ const requestOptions = {
 
 function Songs({ setFav, fav }) {
   const [data, setData] = useState([]);
+  const [selectedSong, setSelectedSong] = useState(null);
+  const [isMusicWindowVisible, setIsMusicWindowVisible] = useState(false);
 
   const url = "https://academics.newtonschool.co/api/v1/music/song?limit=100";
 
@@ -28,49 +30,63 @@ function Songs({ setFav, fav }) {
       .catch((error) => console.log("error", error));
   }, []);
 
+  const handlePlaySong = (song) => {
+    setSelectedSong(song);
+    setIsMusicWindowVisible(true);
+  };
+
   return (
-    <Container>
-      <h1 className="title-recommendedsongs">Featured Songs</h1>
-      <div className="musicsection-maincontainer">
-        {data.map((item, index) => {
-          return (
-            <div className="musiclist" key={index}>
-              <div className="home-image-container">
-                <img
-                  className="song-thumbnail"
-                  src={item.thumbnail}
-                  alt="thumbnail"
-                />
-                <PlayCircleIcon
-                  className="home-musicplay-icon"
-                  sx={{ fontSize: 30 }}
+    <div>
+      <Container>
+        <h1 className="title-recommendedsongs">Featured Songs</h1>
+        <div className="musicsection-maincontainer">
+          {data.map((item, index) => {
+            return (
+              <div className="musiclist" key={index}>
+                <div className="home-image-container">
+                  <img
+                    className="song-thumbnail"
+                    src={item.thumbnail}
+                    alt="thumbnail"
+                  />
+                  <PlayCircleIcon
+                    className="home-musicplay-icon"
+                    sx={{ fontSize: 30 }}
+                    onClick={() => handlePlaySong(item)}
+                  />
+                </div>
+                <Link
+                  to="/musicplayer"
+                  className="musicplayer-link"
+                  state={{ from: { item } }}
+                >
+                  <p className="song-title">{item.title}</p>
+                  {item.artist.map((ele, idx) => {
+                    return (
+                      <div key={idx}>
+                        <p>{ele.name}</p>
+                      </div>
+                    );
+                  })}
+                </Link>
+                <ThumbUpIcon
+                  className="thumbsupicon"
+                  onClick={() => {
+                    setFav([...fav, item]);
+                  }}
                 />
               </div>
-              <Link
-                to="/musicplayer"
-                className="musicplayer-link"
-                state={{ from: { item } }}
-              >
-                <p className="song-title">{item.title}</p>
-                {item.artist.map((ele, idx) => {
-                  return (
-                    <div key={idx}>
-                      <p>{ele.name}</p>
-                    </div>
-                  );
-                })}
-              </Link>
-              <ThumbUpIcon
-                className="thumbsupicon"
-                onClick={() => {
-                  setFav([...fav, item]);
-                }}
-              />
-            </div>
-          );
-        })}
-      </div>
-    </Container>
+            );
+          })}
+        </div>
+        {selectedSong && isMusicWindowVisible && (
+          <MusicPlayerBottomWindow
+            song={selectedSong}
+            setIsMusicWindowVisible={setIsMusicWindowVisible}
+          />
+        )}
+      </Container>
+    </div>
   );
 }
 

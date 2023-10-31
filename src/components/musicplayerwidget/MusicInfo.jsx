@@ -3,11 +3,15 @@ import React from "react";
 function MusicInfo({ item }) {
   return (
     <div className="musicInfoMainContainer">
-      {console.log(item.item.thumbnail)}
-      <img className="musicinfo-thumbnail" src={item.item.thumbnail} />
+      {console.log(item.thumbnail)}
+      <img
+        className="musicinfo-thumbnail"
+        src={item.thumbnail}
+        alt="song-thumbnail"
+      />
       <div className="musicinfo-details">
-        <p>{item.item.title}</p>
-        {item.item.artist.map((ele, idx) => {
+        <p>{item.title}</p>
+        {item.artist.map((ele, idx) => {
           return (
             <div key={idx}>
               <p>{ele.name}</p>

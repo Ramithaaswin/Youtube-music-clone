@@ -3,11 +3,20 @@ import "./musicPlayerBottomWindow.css";
 import PauseIcon from "@mui/icons-material/Pause";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
-function MusicControls() {
+function MusicControls({ isPlaying, togglePlayPause }) {
+  // const togglePlayPause = () => {
+  //   setIsPlaying(!isPlaying);
+  // };
+
   return (
     <div className="MusicControlsmaincontainer">
-      <PauseIcon className="pauseicon"/>
-      <PlayArrowIcon className="playicon"/>
+      {isPlaying ? (
+        <PauseIcon className="pauseicon" onClick={togglePlayPause} />
+      ) : (
+        <PlayArrowIcon className="playicon" onClick={togglePlayPause} />
+      )}
+      {/* <PauseIcon className="pauseicon" />
+      <PlayArrowIcon className="playicon" /> */}
     </div>
   );
 }

@@ -1,18 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import "./musicplayer.css";
 import Sidebar from "../sidebar/Sidebar";
 import { useLocation } from "react-router-dom";
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import MusicPlayerBottomWindow from "../musicplayerwidget/MusicPlayerBottomWindow";
+// import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+// import MusicPlayerBottomWindow from "../musicplayerwidget/MusicPlayerBottomWindow";
 
 function Musicplayer() {
-  const [isMusicWindowVisible, setIsMusicWindowVisible] = useState(false);
+  // const [isMusicWindowVisible, setIsMusicWindowVisible] = useState(false);
 
-  const handlePlayIconClick = () => {
-    setIsMusicWindowVisible(true);
-  };
+  // const handlePlayIconClick = () => {
+  //   setIsMusicWindowVisible(true);
+  // };
 
   // const song = location.state.song;
+
   const location = useLocation();
   const { from } = location.state;
 
@@ -30,7 +31,7 @@ function Musicplayer() {
                 alt="song thumbnail"
                 className="musicplayer-imgthumbnail"
               />
-              <PlayCircleIcon
+              {/* <PlayCircleIcon
                 className="musicplay-icon"
                 sx={{ fontSize: 70 }}
                 onClick={() => handlePlayIconClick(from.item.audio_url)}
@@ -40,7 +41,7 @@ function Musicplayer() {
                   item={from}
                   setIsMusicWindowVisible={setIsMusicWindowVisible}
                 />
-              )}
+              )} */}
             </div>
             <div className="musicDetails">
               <h1>{from.item.title}</h1>
