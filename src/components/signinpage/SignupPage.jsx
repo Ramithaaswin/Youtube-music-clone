@@ -18,7 +18,9 @@ function SignupPage() {
 
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
-    navigate("/");
+    // navigate("/");
+    window.location.href = "/"
+    window.location.reload();
   };
 
   return (

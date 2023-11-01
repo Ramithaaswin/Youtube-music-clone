@@ -14,6 +14,7 @@ function SignInPage() {
 
     if (loginusername === storedUsername && loginpassword === storedPassword) {
       window.location.href = "/";
+      window.location.reload();
     } else {
       setError("Invalid username and password");
     }
