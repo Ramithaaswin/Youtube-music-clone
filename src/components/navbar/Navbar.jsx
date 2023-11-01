@@ -10,6 +10,9 @@ import AccountInfo from "./AccountInfo";
 const Navbar = () => {
   const [showAccountDetails, setshowAccountDetails] = useState(false);
 
+  const user = localStorage.getItem("username");
+  console.log(user);
+
   const handleClick = () => {
     setshowAccountDetails(!showAccountDetails);
   };
@@ -27,7 +30,10 @@ const Navbar = () => {
       <Searchbar />
       <div className="rightSideNavbar">
         <CastIcon />
-        {showAccountDetails && <AccountInfo onOptionSelect={handleOptionSelect}/>}
+        <p className="username">{user}</p>
+        {showAccountDetails && (
+          <AccountInfo onOptionSelect={handleOptionSelect} setshowAccountDetails={setshowAccountDetails}/>
+        )}
         <AccountCircleIcon onClick={handleClick}>
           <AccountInfo />
         </AccountCircleIcon>

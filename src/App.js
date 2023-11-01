@@ -8,6 +8,8 @@ import SubscriptionPage from "./components/subscriptionpage/SubscriptionPage";
 import SignInPage from "./components/signinpage/SignInPage";
 import LikedMusicPge from "./components/likedmusic/LikedMusicPge";
 import LibraryPage from "./components/librarypage/LibraryPage";
+import SignupPage from "./components/signinpage/SignupPage";
+
 
 function App() {
   const [fav, setFav] = useState([]);
@@ -31,6 +33,7 @@ function App() {
                 element={<SubscriptionPage />}
               ></Route>
               <Route path="/signin" element={<SignInPage />}></Route>
+              <Route path="/signup" element={<SignupPage />}></Route>
               <Route
                 path="/likedmusic"
                 element={<LikedMusicPge fav={fav} setFav={setFav} />}

@@ -4,18 +4,24 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
 import { Link } from "react-router-dom";
 
-function AccountInfo({onOptionSelect}) {
+function AccountInfo({ onOptionSelect, setshowAccountDetails }) {
+  const onCickingLogout = () => {
+    setshowAccountDetails(false);
+    localStorage.removeItem("username");
+    localStorage.removeItem("password");
+  };
+
   return (
     <div className="blur-div">
       <div className="account-dropdown-container">
         <ul>
           <li onClick={onOptionSelect}>
-            <Link to="/signin" className="signinLink">
+            <Link to="/signup" className="signinLink">
               <ExitToAppIcon className="signInIcon" />
-              <p className="signin-menu">SignIn</p>
+              <p className="signin-menu">SignIn/Signup</p>
             </Link>
           </li>
-          <li onClick={onOptionSelect}>
+          <li className="signout-menu" onClick={onCickingLogout}>
             <LogoutIcon />
             <p>SignOut</p>
           </li>

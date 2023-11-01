@@ -96,3 +96,9 @@
     min-height: 100vh;
     background-color: rgb(0, 0, 0, 0.3);
 }
+.username{
+    padding: 10px;
+}
+.signout-menu:hover{
+    cursor: pointer;
+}
